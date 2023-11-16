@@ -24,9 +24,12 @@ dataRef1.on('value', function (getdata2) {
 
 dataRef2.on('value', function (getdata1) {
   var humi = getdata1.val();
-  document.getElementById('humidity').innerHTML = humi + "%";
+  // document.getElementById('humidity').innerHTML = humi + "%";
+  var gauge = new RadialGauge({
+    renderTo: 'foo',
+    value: humi,
+  }).draw();
 })
-
 
 var index = 0;
 var btn = document.getElementById("led");

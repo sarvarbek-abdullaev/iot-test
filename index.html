@@ -14,11 +14,13 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
   </script>
   <script src="./server.js" defer="defer"></script>
+  <script src="//cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
+      <canvas id="foo"></canvas>
       <div class="col-12">
         <h1>Temperature</h1>
         <h2 id="temperature"></h2>
