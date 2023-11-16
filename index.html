@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" defer="defer"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" defer="defer"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+  </script>
+  <script src="./server.js" defer="defer"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Temperature</h1>
+        <h2 id="temperature"></h2>
+      </div>
+      <div class="col-12">
+        <h1>Humidity</h1>
+        <h2 id="humidity"></h2>
+      </div>
+      <div class="col-12">
+        <button id="led">turn on</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
